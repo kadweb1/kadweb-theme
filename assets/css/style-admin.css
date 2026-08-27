@@ -1,0 +1,31 @@
+/* Стили для админ-панели */
+
+
+/* Покраска Separator для разделения меню */
+
+#adminmenu li.wp-menu-separator {
+    height: auto;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#adminmenu div.separator {
+    height: 1px;
+    background: rgba(255, 255, 255, .4);
+}
+
+/* Уменьшение высоты acf-редактора */
+
+[data-name="field_name"] .acf-editor-wrap iframe {
+    min-height: 200px !important;
+}
+
+/* Покраска и увеличение границы вертикального повторителя */
+
+.acf-table>tbody>tr>td {
+    border-top-width: 6px;
+}
+
+.acf-repeater.-row>table>tbody>tr>td, .acf-repeater.-block>table>tbody>tr>td {
+    border-top-color: #2C2E4F !important;
+}
